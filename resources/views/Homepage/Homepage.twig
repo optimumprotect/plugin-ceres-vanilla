@@ -1,6 +1,6 @@
 {% extends getPartial('page-design') %}
 {% set currentLang = services.sessionStorage.getLang() %}
-{% set homepageJson = getExternalContent("https://github.com/optimumprotect/plugin-ceres-vanilla/blob/test_branch/HomepageContent.json") %}
+{% set homepageJson = getInternalContent("https://github.com/optimumprotect/plugin-ceres-vanilla/blob/test_branch/HomepageContent.json") %}
 {% set homepageData = homepageJson[currentLang] %}
 {% block PageBody %}
 
