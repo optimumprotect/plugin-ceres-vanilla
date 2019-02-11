@@ -6,7 +6,7 @@ use Plenty\Plugin\Templates\Twig;
 
 class CeresVanillaContainer
 {
-    public function call(Twig $twig):string
+    public function call(Twig $twig)
     {
         return $twig->render('CeresVanilla::Stylesheet');
     }
